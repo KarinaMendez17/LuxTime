@@ -1,0 +1,14 @@
+.vscode/
+*.log
+Image by <a href="https://pixabay.com/users/piro4d-2707530/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3091031">PIRO</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3091031">Pixabay</a>
+
+Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1869928">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1869928">Pixabay</a>
+
+Image by <a href="https://pixabay.com/users/ajale-1481387/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6409941">Andrea</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6409941">Pixabay</a>
+css/
+├─ style.css        <-- estilos globales: reset, tipografía, paleta, utilities
+├─ home.css         <-- banner, grid de relojes, botones, secciones Home
+├─ catalogo.css     <-- grid productos catálogo, botones
+├─ detalle.css      <-- zoom de imagen, personalización, carrusel relacionado
+├─ historia.css     <-- línea de tiempo, galería mosaico
+├─ contacto.css     <-- formulario, validaciones, footer

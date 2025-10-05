@@ -1,0 +1,43 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Tablet*/
+@media (max-width: 1024px) {
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    background: linear-gradient(180deg, #2b2b2b 0%, #0e0e0f 100%);
+    color: #fafafa;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #d4af37;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
