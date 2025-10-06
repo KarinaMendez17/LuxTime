@@ -1,5 +1,4 @@
-/* === CATÁLOGO DE RELOJES === */
-
+/*catalog*/
 .catalogo {
   padding: 40px 20px;
   max-width: 1200px;
@@ -14,7 +13,7 @@
 .main-text h2 {
   font-family: "Bergstena", sans-serif;
   color: #d4af37;
-  font-size: 2rem;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 
@@ -23,14 +22,14 @@
   font-size: 1rem;
 }
 
-/* === GRID DE PRODUCTOS === */
+/*grid*/
 .watches {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
 
-/* === TARJETAS === */
+/*cards*/
 .tarjeta {
   background-color: #1f1f1f;
   border-radius: 10px;
@@ -46,7 +45,7 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* IMAGEN */
+/*image*/
 .tarjeta img {
   width: 100%;
   height: 250px;
@@ -54,15 +53,15 @@
   display: block;
 }
 
-/* TEXTOS */
+/*text*/
 .tarjeta h3 {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 17px;
   color: #fafafa;
 }
 
 .tarjeta p {
-  font-size: 1rem;
+  font-size: 16px;
   color: #d4af37;
   margin: 8px 0;
 }
@@ -70,7 +69,7 @@
 /* ETIQUETA DE DISPONIBILIDAD */
 .tarjeta span {
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #d4af37;
@@ -80,13 +79,12 @@
   color: #ff6b6b;
 }
 
-/* BOTÓN */
 /*Button*/
 .tarjeta button {
   background: linear-gradient(135deg, #d4af37, #ffe375);
-  color: #a7871f;
+  color: #725905;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -101,9 +99,9 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0,0,0,0.4);
 }
-/* === RESPONSIVE === */
 
-/* Tablets */
+/* === RESPONSIVE === */
+/* Tablet*/
 @media (max-width: 1024px) {
   .watches {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -113,7 +111,7 @@
   }
 }
 
-/* Celulares */
+/*Mobile*/
 @media (max-width: 768px) {
   .watches {
     grid-template-columns: 1fr 1fr;
@@ -124,12 +122,3 @@
   }
 }
 
-/* Celulares pequeños */
-@media (max-width: 480px) {
-  .watches {
-    grid-template-columns: 1fr;
-  }
-  .tarjeta img {
-    height: 200px;
-  }
-}
