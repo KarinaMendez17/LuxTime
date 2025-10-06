@@ -1,0 +1,135 @@
+/* === CATÁLOGO DE RELOJES === */
+
+.catalogo {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-text h2 {
+  font-family: "Bergstena", sans-serif;
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.main-text p {
+  color: #fafafa;
+  font-size: 1rem;
+}
+
+/* === GRID DE PRODUCTOS === */
+.watches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* === TARJETAS === */
+.tarjeta {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN */
+.tarjeta img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* evita deformes */
+  display: block;
+}
+
+/* TEXTOS */
+.tarjeta h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #fafafa;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  color: #d4af37;
+  margin: 8px 0;
+}
+
+/* ETIQUETA DE DISPONIBILIDAD */
+.tarjeta span {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #d4af37;
+}
+
+.tarjeta span.agotado {
+  color: #ff6b6b;
+}
+
+/* BOTÓN */
+/*Button*/
+.tarjeta button {
+  background: linear-gradient(135deg, #d4af37, #ffe375);
+  color: #a7871f;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  text-shadow: -1px 1px 0 #fff, 1px -1px 0 #d4af37;
+  transition: all 0.3s ease;
+}
+
+.tarjeta button:hover {
+  background: linear-gradient(135deg, #ffe375, #d4af37);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+/* === RESPONSIVE === */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .watches {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .tarjeta img {
+    height: 220px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .watches {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .tarjeta img {
+    height: 180px;
+  }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+  .watches {
+    grid-template-columns: 1fr;
+  }
+  .tarjeta img {
+    height: 200px;
+  }
+}

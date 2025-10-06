@@ -19,11 +19,6 @@ button:hover {
   box-shadow: 0 6px 8px rgba(0,0,0,0.4);
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 img {
     width: 100%;
     display: block;
@@ -141,16 +136,50 @@ img {
   display: block;
 }
 
-/* Responsive */
+/* TABLET */
 @media (max-width: 1024px) {
+  .banner { height: 400px; }
+
+  .banner-txt h2 {
+    font-size: 2.2rem;
+  }
+
+  .watches {
+    gap: 20px;
+  }
+
   .watch-card {
-    width: calc((100% / 2) - 20px);
+    width: calc(50% - 20px);
   }
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
+  .banner { height: 250px; }
+
+  .banner-txt h2 {
+    font-size: 1.6rem;
+  }
+
+  .featured {
+    padding: 40px 10px;
+  }
+
+  .watches {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
   .watch-card {
+    width: 90%;
+  }
+
+  button {
     width: 100%;
+    max-width: 300px;
+    padding: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
