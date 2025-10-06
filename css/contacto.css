@@ -1,0 +1,33 @@
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.campo input:invalid, .campo textarea:invalid {
+    border-color: #fd0000;
+}
+
+.campo input:valid, .campo textarea:valid {
+    border-color: #d4af37;
+}
+
+.error {
+    display: none;
+    color:#fd0000;
+
+}
+
+.campo input:invalid + .error, textarea:invalid + .error {
+    display: block;
+}
