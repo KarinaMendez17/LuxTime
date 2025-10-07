@@ -6,13 +6,13 @@
 }
 
 /*Tablet*/
-@media (max-width: 1024px) {
+@media (max-width: 64rem) { /* 1024px */
   .clearfix {
     grid-template-columns: 1fr;
   }
   .navbar {
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
   }
   .logo {
     text-align: center;
@@ -20,13 +20,13 @@
 }
 
 /*Mobile*/
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px */
   .clearfix {
     grid-template-columns: 1fr;
   }
   .navbar {
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
   }
   .logo {
     text-align: center;
@@ -54,26 +54,26 @@ body {
     color: #d4af37;
     font-size: 2rem;
     text-transform: capitalize;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem; /* 1px */
     margin: 0;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
 }
 
 .banner-text {
     color: #d4af37;
     font-family: "Bergstena";
-    font-size: 50px;
-    letter-spacing: 0.5px;
-    backdrop-filter: blur(1px);
+    font-size: 3.125rem; /* 50px */
+    letter-spacing: 0.03125rem; /* 0.5px */
+    backdrop-filter: blur(0.0625rem); /* 1px */
     text-shadow:
-    0 0 3px #0e0e0f,
-    0 0 6px #0e0e0f,
-    0 0 9px #ffe375;
+    0 0 0.1875rem #0e0e0f, /* 3px */
+    0 0 0.375rem #0e0e0f, /* 6px */
+    0 0 0.5625rem #ffe375; /* 9px */
 }
 
 h3 {
     text-transform: capitalize;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03125rem; /* 0.5px */
 }
 
 .navbar {
@@ -81,12 +81,12 @@ h3 {
   align-items: center;
   justify-content: space-between;
   background-color: #2b2b2b;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.2); /* 2px 5px */
   flex-wrap: wrap;
 }
 
@@ -94,13 +94,13 @@ h3 {
   list-style: none;
   justify-content: space-around;
   display: flex;
-  gap: 80px;
+  gap: 5rem; /* 80px */
   margin: 0;
 }
 
 .nav-links li a {
   text-decoration: none;
-  font-size:15px;
+  font-size: 0.9375rem; /* 15px */
   font-weight: bold;
   transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
 }
@@ -108,22 +108,22 @@ h3 {
 .nav-links li a:hover {
   color: #d4af37;
   transform: scale(1.1);
-  text-shadow: 0 0 5px #ffe375;
+  text-shadow: 0 0 0.3125rem #ffe375; /* 5px */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .navbar {
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 0.9375rem; /* 15px */
   }
 
   .nav-links {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem; /* 15px */
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px */
   }
 
   .nav-links li {
@@ -134,7 +134,7 @@ h3 {
   .nav-links li a {
     display: block;
     width: 100%;
-    padding: 10px 0;
+    padding: 0.625rem 0; /* 10px */
   }
 
   .logo {
@@ -159,7 +159,7 @@ a:visited {
 a:hover {
   color: #d4af37;
   transform: scale(1.1);
-  text-shadow: 0 0 5px #ffe375;
+  text-shadow: 0 0 0.3125rem #ffe375; /* 5px */
 }
 
 /*Footer*/
@@ -167,7 +167,7 @@ a:hover {
   background-color: #1a1a1a;
   color: #fafafa;
   text-align: center;
-  padding: 15px 0;
+  padding: 0.9375rem 0; /* 15px */
   font-size: x-small;
 }
 
