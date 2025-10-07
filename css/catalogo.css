@@ -48,8 +48,8 @@
 }
 
 .tarjeta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0.375rem 0.9375rem rgba(0,0,0,0.5); /* 0 6px 15px */
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px 10px #d4af37;
 }
 
 .tarjeta img {
