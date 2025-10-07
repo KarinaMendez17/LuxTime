@@ -136,7 +136,7 @@ img {
   display: block;
 }
 
-/* TABLET */
+/*Tablet*/
 @media (max-width: 1024px) {
   .banner { height: 400px; }
 
@@ -153,7 +153,7 @@ img {
   }
 }
 
-/* MOBILE */
+/*Mobile*/
 @media (max-width: 768px) {
   .banner { height: 250px; }
 
