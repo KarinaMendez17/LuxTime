@@ -1,0 +1,34 @@
+/* Contenedor general del carrusel */
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.timeline {
+  display: flex;
+  width: max-content;
+  animation: slidein 20s linear infinite;
+}
+
+.timeline-item {
+  min-width: 300px; /* Ajusta según tu diseño */
+  margin-right: 2rem;
+  padding: 1rem;
+  background: rgba(88, 90, 93, 0.5);
+  border-radius: 12px;
+  text-align: center;
+  color: #fafafa;
+  flex-shrink: 0;
+}
+
+@keyframes slidein {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Ajusta según la cantidad de items visibles */
+}
+
+.timeline-container:hover .timeline {
+  animation-play-state: paused;
+}
