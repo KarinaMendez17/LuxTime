@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/contacto.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav class="navbar">
             <h1 class="logo"><a href="../index.html">LuxTime</a></h1>
@@ -19,32 +20,32 @@
             </ul>
         </nav>
     </header>
-    
-    <section class="contacto">
-        <h2>Contacto</h2>
 
-        <form class="formulario-contacto" id="contact-form" novalidate>
+    <!-- Contacto -->
+    <section class="contacto">
+        <form class="formulario-contacto" id="contact-form">
+            <h2>Contacto</h2>
             <div class="campo">
                 <label for="nombre">Nombre(s):</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder=" " required>
                 <span class="error">Por favor, ingresa tu nombre completo...</span>
             </div>
 
             <div class="campo">
                 <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
+                <input type="email" id="correo" name="correo" placeholder=" " required>
                 <span class="error">Por favor, introduce un correo válido...</span>
             </div>
             
             <div class="campo">
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" pattern="[0-9] {10}" required>
-                <span class="error">Por favor, ingresa un número de teléfono válido (a 10 dígitos)...</span>
+                <input type="tel" id="telefono" name="telefono" placeholder=" " pattern="[0-9]{10}" required>
+                <span class="error">Por favor, ingresa un número de teléfono válido (10 dígitos)...</span>
             </div>
 
             <div class="campo">
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder=" " required></textarea>
                 <span class="error">Este campo no puede quedar vacío...</span>
             </div>
 
@@ -53,17 +54,27 @@
 
         <div class="info-contacto">
             <h3>Información Adicional:</h3>
-            <a href="mailto:info@luxtime.com">info@luxtime.com</a>
-            <p>+57 300 301 3011</p>
+            <img src="../image/contacto.webp" alt="Contacto" class="decoracion-contacto">
+            <p><a href="mailto:info@luxtime.com">info@luxtime.com</a></p>
+            <p><a href="tel:+573003013011">+57 300 301 3011</a></p>
 
-            <div class="Redes Sociales">
-                <a href="">Instagram</a>
-                <a href="">Facebook</a>
-                <a href="">Twitter</a>
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/thsixth/" target="_blank">
+                    <img src="../image/instagram.webp" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/KarinaMendez17/" target="_blank">
+                    <img src="../image/facebook.webp" alt="Facebook">
+                </a>
+                <a href="https://x.com/th_sixth" target="_blank">
+                    <img src="../image/x.webp" alt="X">
+                </a>
             </div>
         </div>
     </section>
 
-    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>LuxTime © 2025 | Contacto: <a href="mailto:info@luxtime.com">info@luxtime.com</a> | Desarrollado con 💀 por: <a href="https://github.com/karinamendez17" target="_blank">Karina Mendez</a></p>
+    </footer>
 </body>
 </html>

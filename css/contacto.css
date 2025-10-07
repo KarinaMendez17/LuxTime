@@ -1,33 +1,147 @@
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*title*/
+.contacto h2 {
+  font-family: "Bergstena", sans-serif;
+  color: #d4af37;
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*form*/
+.formulario-contacto {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
 form {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.campo input, .campo textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 8px;
-    transition: border-color 0.3s;
+/* Input */
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  transition: border-color 0.3s;
 }
 
-.campo input:invalid, .campo textarea:invalid {
-    border-color: #fd0000;
+/* Valid input */
+.campo input:valid,
+.campo textarea:valid {
+  border-color: #d4af37;
 }
 
-.campo input:valid, .campo textarea:valid {
-    border-color: #d4af37;
+/*Invalid*/
+.campo input:invalid:not(:placeholder-shown),
+.campo textarea:invalid:not(:placeholder-shown) {
+  border-color: #fd0000;
 }
 
 .error {
-    display: none;
-    color:#fd0000;
-
+  display: none;
+  color: #fd0000;
+  font-size: 0.9rem;
 }
 
-.campo input:invalid + .error, textarea:invalid + .error {
-    display: block;
+.campo input:invalid:not(:placeholder-shown) + .error,
+.campo textarea:invalid:not(:placeholder-shown) + .error {
+  display: block;
+}
+
+form:has(:invalid) button {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/*Info*/
+.info-contacto {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background: rgba(88, 90, 93, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-contacto img {
+  width: 100%;
+  height: 180px; /* ajusta este valor a tu gusto */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.info-contacto h3 {
+  font-family: "Bergstena", sans-serif;
+  color: #d4af37;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-contacto p {
+  font-size: medium;
+  font-weight: bold;
+}
+
+/*social*/
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.redes-sociales img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px #d4af37);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .formulario-contacto,
+  .info-contacto {
+    max-width: 100%;
+  }
+
+  .info-contacto img {
+    width: 60%;
+  }
 }
