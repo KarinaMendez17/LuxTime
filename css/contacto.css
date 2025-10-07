@@ -70,6 +70,25 @@ form:has(:invalid) button {
   pointer-events: none;
 }
 
+button {
+  background: linear-gradient(135deg, #d4af37, #ffe375);
+  color: #725905;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  text-shadow: -1px 1px 0 #fff, 1px -1px 0 #d4af37;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ffe375, #d4af37);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+
 /*Info*/
 .info-contacto {
   flex: 1 1 18.75rem;
