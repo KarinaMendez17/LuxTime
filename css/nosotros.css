@@ -31,10 +31,11 @@ h3 {
   text-align: center;
   width: 100%;
   margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .hc-section {
-  margin: 1.25rem auto;
+  margin: 1.25rem;
   justify-content: space-around;
   background: rgba(88, 90, 93, 0.5);
   padding: 1rem;
@@ -86,8 +87,17 @@ margin: 0;
 background: rgba(0,0,0,0.25);
 padding: 0.75rem;
 border-radius: 8px;
-text-align: left;
+text-align: center;
 color: #fff;
+}
+
+.hc-text {
+  color: #fafafa;
+  padding: 0.75rem;
+  text-align: center;
+  text-justify: justify;
+  margin-bottom: 2rem;
+  margin-top: 1.25rem;
 }
 
 .hc-card h4 { 
@@ -135,7 +145,6 @@ video {
   margin: 2rem auto;
 }
 
-/* TESTIMONIOS */
 .hc-testimonios { display: grid; gap: 0.75rem; margin-top: 1rem; }
 blockquote { margin: 0; padding: 0.75rem 1rem; background: rgba(0,0,0,0.2); border-left: 4px solid var(--gold); border-radius: 6px; color: #eee; }
 blockquote footer { margin-top: 0.5rem; color: #ccc; font-size: 0.875rem; }
