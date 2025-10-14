@@ -1,4 +1,4 @@
-# LuxTime ⌚
+# LuxTime ⌚ (examen.)
 
 ![LuxTime Banner](/image/watch-banner.webp)
 
@@ -76,3 +76,16 @@ cd LuxTime
 Desarrollado por **[Karina Mendez](https://github.com/karinamendez17)** 💀
 
 
+
+Contexto:
+LuxTime quiere una sección de blog estático para mostrar noticias y contenido corporativo. 
+
+Este examen valida el uso de CSS Grid, diseño de cards y paginación simulada.
+
+
+
+El objetivo es crear esta sección de blog teniendo en cuenta lo siguiente:
+
+Un mínimo de  3 artículos en cards con título, imagen, autor y fecha.
+Layout con CSS Grid, diseño responsivo.
+Botones de paginación “Anterior” y “Siguiente” (simulación, sin lógica real).
